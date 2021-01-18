@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:3000');
+var socket = io.connect('http://globallivechats.com/');
 
 var message = document.getElementById('message'),
 	handle = document.getElementById('handle'),
@@ -25,5 +25,34 @@ socket.on('chat',function(data){
 });
 
 socket.on('typing',function(data){
-	feedback.innerHTML = '<p><em>' + data + ' is typing a message....</em></p>';
+	feedback.innerHTML = '<p><em>' + data + ' is Typing a message....</em></p>';
 });
+
+
+
+const navSlide = () => {
+	const burger = document.querySelector('.burger');
+	const nav = document.querySelector('.nav-links');
+	const navLinks = document.querySelectorAll('.nav-links li');
+	
+
+	burger.addEventListener('click',()=>{
+		//toggle nav
+		nav.classList.toggle('nav-active');
+
+		//Animate links
+	    navLinks.forEach((link, index) =>{
+		    if(link.style.animation){
+			   link.style.animation = ''
+		    }else{
+			   link.style.animation = `navLinkFade 0.5s ease forwards ${index/ 7 + 0.5}s`;
+		    }
+		});
+		//burger animation
+		burger.classList.toggle('toggle');
+
+	});
+	
+}
+
+navSlide();

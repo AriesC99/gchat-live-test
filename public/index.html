@@ -1,20 +1,66 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ioChat</title>
+	<title>TalkTalk</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
+
 <body>
+	<nav>
+		<div class="logo">
+			<h4>The GLOBAL TALKS</h4>
+		</div>
+		<ul class="nav-links">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="#">About Us</a>
+			</li>
+			<li>
+				<a href="#">Terms and Condition</a>
+			</li>
+			<li>
+				<a href="#">Privacy and Policy</a>
+			</li>
+		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+</body>
+
+<body>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+
+
+<p id="demo"></p>
+	<h1 style="text-align: center;">𝓣𝓐𝓛𝓚 𝓣𝓐𝓛𝓚</h1>
 	<div id="io-chat">
 		<div id="chat-window">
 			<div id="output"></div>
 			<div id="feedback"></div>
 		</div>
-		<input id="handle" type="text" placeholder="Handle">
+		<input id="handle" type="text" placeholder="Name">
 		<input id="message" type="text" placeholder="Message">
 		<button id="send">Send</button>
 	</div>
 	<script src="/chat.js"></script>
+	<h2 style="color: rgb(65, 63, 63);text-align:center">℗ Nester Ferns Production</h2>
 </body>
 </html>
+
+
+
+
+
+

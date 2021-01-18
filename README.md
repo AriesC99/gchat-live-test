@@ -1,5 +1,5 @@
 # ioChat
-An Omegle clone, to talk with strangers, anonymously, using socket.io
+To talk with strangers using socket.io
 
 #### Other Features:
 - [ ] Add friend functionality.
