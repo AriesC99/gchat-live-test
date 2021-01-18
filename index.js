@@ -1,6 +1,7 @@
 var express = require("express");
 var socket = require("socket.io");
 var app = express();
+console.log("connect to server");
 var server = require("./server");
 
 app.use(express.static("public"));
