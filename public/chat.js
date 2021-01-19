@@ -1,3 +1,4 @@
+const io = require("socket.io.client");
 var socket = io.connect("https://globalchat-live.herokuapp.com");
 
 var message = document.getElementById("message"),

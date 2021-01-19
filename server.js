@@ -3,7 +3,7 @@ const app = require("./index");
 const socket = require("socket.io");
 const port = process.env.PORT || 3000;
 
-const server = http.createServer(app);
+const server = http.createServer("https://globalchat-live.herokuapp.com");
 
 const io = socket(server);
 io.on("connection", function (socket) {
