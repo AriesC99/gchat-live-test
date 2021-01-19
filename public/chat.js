@@ -1,4 +1,4 @@
-var socket = io.connect("https://globalchat-live.herokuapp.com/");
+var socket = io.connect("http://localhost:3000");
 
 var message = document.getElementById("message"),
   handle = document.getElementById("handle"),
